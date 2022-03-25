@@ -57,7 +57,7 @@
       "table": "MyIngress.arp_ternary",
      "match": {
        "hdr.arp.oper": [1],
-       "hdr.arp.tpa": ["10.0.3.30", 32]
+       "hdr.arp.targetIPAddress": ["10.0.3.30", 32]
      },
      "action_name": "MyIngress.send_arp_reply",
      "action_params": {
@@ -69,7 +69,7 @@
      "table": "MyIngress.arp_ternary",
      "match": {
        "hdr.arp.oper": [1],
-       "hdr.arp.tpa": ["10.0.4.40", 32]
+       "hdr.arp.targetIPAddress": ["10.0.4.40", 32]
      },
      "action_name": "MyIngress.send_arp_reply",
      "action_params": {
